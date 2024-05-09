@@ -16,33 +16,47 @@
     </div>
     <div class="container">
         <div class="top-text">
-            <P>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-                Sign up <span>now</span> to get started.</P>
-            <h1>You <span>know</span> you want to.</h1>
+            <P class="paragraph">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
+                Sign up <span class="italic-span">now</span> to get started.</P>
+            <h1 class="sentence">You <span class="italic-span">know</span> you want to.</h1>
         </div>
         <div class="sign-up-form">
-            <h2>Let's do this!</h2>
-            <form action="" method="post" class="form">
-                <fieldset class="fieldset">
+            <h2 class="sentence">Let's do this!</h2>
+            <form action="" method="get" class="form" id="form1">
+            <fieldset class="fieldset">
+                <div class="box">
                     <label for="first-name" class="labels">FIRST NAME</label>
-                    <input type="text" id="first-name" class="inputs first-variant">
-                    <label for="email"  class="labels">EMAIL</label>
-                    <input type="email" id="email"  class="inputs first-variant">
-                    <label for="password"  class="labels">PASSWORD</label>
-                    <input type="password" id="password"  class="inputs second-variant">
-                </fieldset>
-                <fieldset class="fieldset">
-                     <label for="last-name"  class="labels">LAST NAME</label>
-                    <input type="text" id="last-name" class="inputs first-variant">
-                    <label for="phone-number" class="labels">PHONE NUMBER</label>
-                    <input type="number" id="phone-number" class="inputs first-variant">
-                    <label for="confirm-password" class="labels">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-password" class="inputs second-variant">  
+                    <input type="text" id="first-name" class="inputs first-variation" required>                    
+                </div>
+                <div class="box">
+                    <label for="last-name"  class="labels">LAST NAME</label>
+                    <input type="text" id="last-name" class="inputs first-variation" required>
+                </div>
             </fieldset>
-            </form>
+            <fieldset class="fieldset">
+                <div class="box">
+                    <label for="email"  class="labels">EMAIL</label>
+                    <input type="email" id="email"  class="inputs first-variation" required>
+                </div>
+                <div class="box">
+                    <label for="phone-number" class="labels">PHONE NUMBER</label>
+                    <input type="tel" id="phone-number" class="inputs first-variation" required>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset">
+                <div class="box">
+                    <label for="password"  class="labels">PASSWORD</label>
+                    <input type="password" id="password" class="inputs first-variation passwords" maxlength="20" required>
+                </div>
+                <div class="box">
+                    <label for="confirm-password" class="labels">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" class="inputs first-variation passwords" maxlength="20" required>
+                </div>
+            </fieldset>    
+        </form>
         </div>
         <div class="bottom-section">
-            <button>Create Account</button>
+            <button type="submit" form="form1">Create Account</button>
             <h3>Already have an account? <span class="log-in">Log in</span></h3>
         </div>
     </div>
