@@ -136,13 +136,15 @@ body{
     font-weight: 500;
 }
 
+.password-message{
+    margin: 0;
+    padding-top: 1px;
+    color: red;
+}
+
 .first-variation:focus{
     outline: 1px solid blue;
     box-shadow: 4px 4px 5px rgba(87,85,87,0.25) ;
-}
-
-.passwords:invalid{
-    outline: 1px solid red;
 }
 
 .bottom-section {

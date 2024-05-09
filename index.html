@@ -45,20 +45,22 @@
             </fieldset>
             <fieldset class="fieldset">
                 <div class="box">
-                    <label for="password"  class="labels">PASSWORD</label>
-                    <input type="password" id="password" class="inputs first-variation passwords" maxlength="20" required>
+                    <label for="password1"  class="labels">PASSWORD</label>
+                    <input type="password" id="password1" name="password1" class="inputs first-variation passwords" maxlength="20" minlength="8" required>
+                    <h5 class="password-message" id="message"></h5>
                 </div>
                 <div class="box">
-                    <label for="confirm-password" class="labels">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" class="inputs first-variation passwords" maxlength="20" required>
+                    <label for="password2" class="labels">CONFIRM PASSWORD</label>
+                    <input type="password" id="password2" name="password2" class="inputs first-variation passwords" maxlength="20" minlength="8" required>
                 </div>
             </fieldset>    
         </form>
         </div>
         <div class="bottom-section">
-            <button type="submit" form="form1">Create Account</button>
+            <button type="submit" form="form1" id="btn">Create Account</button>
             <h3>Already have an account? <span class="log-in">Log in</span></h3>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
